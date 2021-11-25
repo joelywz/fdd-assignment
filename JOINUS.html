@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Join Us</title>
+<script type="text/javascript">
+var execute = 0;
+
+	function onFocusHandler(x){
+		var deftext = ["As per Student Card", "e.g., johndoe123@gmail.com", "TPxxxxxx", "e.g., APU1F2103SE"];
+		for (i = 0; i < deftext.length; i++){
+			if (x.value == deftext[i]){
+				x.value="";
+				x.style.color="#000000";
+				x.style.fontStyle="normal";
+				execute += 1;	
+			}
+		}
+}
+	/* 	Have 4 default textBox Input 
+		For each onclick, will remove default text
+		So, if user need to modify his answer again, 
+		when user click, the ans he entered won't go blank*/
+	function execute4(x){
+		if (execute <= 4){
+			onFocusHandler(x)
+		}
+}
+	function submitMsg(){
+		var form, name, email, studID, intakeCd;
+		form = document.getElementById("form1");
+		name = form.elements["nm"].value;
+		email = form.elements["em"].value;
+		studID = form.elements["sid"].value;
+		intakeCd = form.elements["intCd"].value;
+		if (name == "As per Student Card" || name == ""){
+			window.alert("The Full Name field is not filled. Try Again.")
+			return false;
+		}
+		else if (email == "e.g., johndoe123@gmail.com" || email == ""){
+			window.alert("The Email field is not filled. Try Again.")
+			return false;
+		}
+		else if (email.endsWith(".com") == false){
+			window.alert("Invalid Email. Try Again.");
+			return false;
+		}
+		else if (studID == "TPxxxxxx" || studID == ""){
+			window.alert("The Student ID field is not filled. Try Again.")
+			return false;
+		}
+		else if (studID.startsWith("TP") == false || studID.length != 8){
+			window.alert("Invalid Student ID. Try Again.");
+			return false;
+		}
+		else if (intakeCd == "e.g., APU1F2103SE" || intakeCd == ""){
+			window.alert("The Intake Code field is not filled. Try Again.")
+			return false;
+		}
+		window.alert("Thanks " + name + " for signing up with APU Taekwondo Club. Please check your inbox at " + email + " for a notification email.");
+		return true;
+}
+
+/*
+	function txtDefLook(){
+		var name = document.getElementById("nm");   // Get the element with id="demo"
+		name.value="As per Student Card";
+		name.style.color="#CCCCCC";
+		name.style.fontStyle="italic";
+		
+		var email = document.getElementById("em");   // Get the element with id="demo"
+		email.value="e.g., johndoe123@gmail.com";
+		email.style.color="#CCCCCC";
+		email.style.fontStyle="italic";
+		
+		var studID = document.getElementById("sid");   // Get the element with id="demo"
+		studID.value="TPxxxxxx";
+		studID.style.color="#CCCCCC";
+		studID.style.fontStyle="italic";
+		
+		var intakeCd = document.getElementById("intCd");   // Get the element with id="demo"
+		intakeCd.value="e.g., APU1F2103SE";
+		intakeCd.style.color="#CCCCCC";
+		intakeCd.style.fontStyle="italic";
+
+}
+*/
+	function txtNmDefLook(x){
+		x.value="As per Student Card";
+		x.style.color="#CCCCCC";
+		x.style.fontStyle="italic";
+}
+	function txtEmDefLook(x){
+		x.value="e.g., johndoe123@gmail.com";
+		x.style.color="#CCCCCC";
+		x.style.fontStyle="italic";
+}
+	function txtStudIDDefLook(x){
+		x.value="TPxxxxxx";
+		x.style.color="#CCCCCC";
+		x.style.fontStyle="italic";
+}
+	function txtIntCdDefLook(x){
+		x.value="e.g., APU1F2103SE";
+		x.style.color="#CCCCCC";
+		x.style.fontStyle="italic";
+}
+
+</script>
+<!-- Form items don't inherit font information from <body> tag (HTML Selector)
+based on: https://stackoverflow.com/questions/6080413/input-doesnt-inherit-the-font-from-body -->
+<style type="text/css">
+input {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+select{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+</style>
+
+<link href="justinexternal.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="txtNmDefLook(document.getElementById('nm')); txtEmDefLook(document.getElementById('em')); 
+txtStudIDDefLook(document.getElementById('sid')); txtIntCdDefLook(document.getElementById('intCd'))">
+
+<table class="table" style="background-color: #F7F7F7;">
+	<tr >
+		<td><img alt="" src="DesCor(UL).png" /></td>
+		<td><br/><br/><h1>Join Us</h1></td>
+		<td><img alt="" src="DesCor(UR).png" /></td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><img alt="joinuspic" src="joinus.png" class="circlePic" style="width:800px"/></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td><img alt="" src="DesCor(BL).png" /></td>
+		<td><h2 style="font-style: italic">Be Part of the APU Taekwondo Family Today !</h2>
+			<div style="text-decoration: underline; width: 300px" class="blackSection" >
+				Sign Up Below
+			</div>
+		</td>
+		<td><img alt="" src="DesCor(BR).png" /></td>
+	</tr>
+</table>
+<br/><br/>
+
+<form onsubmit="return submitMsg()" name="joinusform" id="form1" method="get" action="#">
+	<table cellpadding="10px" style="vertical-align: top; text-align: left; border: solid 4px black" class="table" >
+		<tr>
+			<td>Full Name</td>
+			<td>:</td>
+			<td><input type="text" id="nm" size="70" maxlength="50" onfocus="execute4(this)" />
+			</td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td>:</td>
+			<td><input type="text" id="em" size="70" maxlength="50" onfocus="execute4(this)" />
+			</td>
+		</tr>
+		<tr>
+			<td>Student ID</td>
+			<td>:</td>
+			<td><input type="text" id="sid" size="8" maxlength="8" onfocus="execute4(this)" />
+			</td>
+		</tr>
+		<tr>
+			<td>Intake Code</td>
+			<td>:</td>
+			<td><input type="text" id="intCd" size="30" maxlength="20" onfocus="execute4(this)" />
+			</td>
+		</tr>
+		<tr>
+			<td>Gender</td>
+			<td>:</td>
+			<td><input type="radio" name="gender1" value="M" checked="checked" />Male
+				<input type="radio" name="gender1" value="F" />Female
+			</td>
+		</tr>
+		<tr>
+			<td>Enrolment</td>
+			<td>:</td>
+			<td><input type="radio" name="enrol1" value="F" checked="checked" />Foundation
+				<input type="radio" name="enrol1" value="D" />Diploma
+				<input type="radio" name="enrol1" value="B" />Bachelor&apos;s Degree
+			</td>
+		</tr>
+		<tr>
+			<td>Country</td>
+			<td>:</td>
+			<td><select name="country1">		<!-- list box or drop down list -->
+					<option value="MY" selected="selected">Malaysia</option>
+					<option value="SG">Singapore</option>
+					<option value="BG">Bangladesh</option>
+					<option value="ID">Indonesia</option>
+					<option value="MD">Maldives</option>
+					<option value="PK">Pakistan</option>
+					<option value="OT">Others</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>Taekwondo Experience</td>
+			<td>:</td>
+			<td><select name="experience1">		<!-- list box or drop down list -->
+					<option value="BEG" selected="selected">Beginner</option>
+					<option value="AMA">Amateur</option>
+					<option value="SEM">Semi-Professional</option>
+					<option value="PRO">Professional</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td><input type="submit" style="font-size:large; width: 150px" class="blackSection"/>&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="reset" style="font-size:large; width: 150px" class="blackSection" onclick="window.location.reload()" />
+			</td>
+		</tr>
+	</table>
+</form>
+<br/><br/>
+
+</body>
+
+</html>
