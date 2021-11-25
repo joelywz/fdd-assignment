@@ -1,0 +1,35 @@
+﻿#inner_contents {
+	background-color: white;
+}
+.bg-image {
+	margin-left: 400px;
+	filter: blur(8px);
+	-webkit-filter: blur(8px);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #000000;
+	font-size: xx-large;
+	border-style: solid;
+	border-width: medium;
+}
+.top-left {
+	position: absolute;
+	top: 10%;
+	left: 16px;
+	color: #000000;
+	font-size: xx-large;
+}
+.top-right {
+	position: absolute;
+	top: 10%;
+	right: 16px;
+	color: #000000;
+	font-size: xx-large;
+}

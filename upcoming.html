@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Upcoming Event</title>
+<link rel="icon" type="image/x-icon" href="logo.png"/>
+<link href="nav.css" rel="stylesheet" type="text/css" />
+<link href="upcoming.css" rel="stylesheet" type="text/css"/>
+<style type="text/css">
+body{
+	font-size: small;
+}
+
+body {
+  margin: 0;
+}
+
+</style>
+</head>
+
+<body>
+<!--navagation bar !-->
+<header>
+	<nav>
+		<div id="nav-logo">
+			<div>
+				<img alt="logo" src="assets/images/logo-white.png" width="45" />
+			</div>
+			<div>
+				TAEKWONDO <span>CLUB</span></div>
+		</div>
+		<ul>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Etiquette</a></li>
+			<li><a href="#">Gallery</a></li>
+			<li><a href="#">Shop</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+	</nav>
+</header>
+
+
+<div id="inner_contents">
+
+		<div>
+			<img alt="" src="taekwondo-fighting-action-vector.jpg" class="bg-image" width="50%" height="50%"/>
+			<div class="centered">Coming Soon</div>
+		</div>
+
+</div>
+
+
+<div class="footer">
+  	<table style="font: normal normal bold large 'Times New Roman', Times, serif; width: 90%; height:50%;margin-left:80px">
+		<tr>
+			<td style="width: 100px; height: 50px" rowspan="2">
+  			<img alt="logo" src="logo.png" id="logo" align="right"/></td>
+			<td style="width: 220px; height: 50px" rowspan="2">TAEWONDO CLUB</td>
+			<td>FIND US ON</td>
+			<td>SUBSCRIBE TO OUR NEWSLETTER &#x2709;</td>
+		</tr>
+		<tr>
+			<td>
+				<img alt="facebook" id="logo" src="fb.png" onclick="document.location='https://www.facebook.com/APUTaekwondoClub/'"/>
+				<img alt="instragram" id="logo" src="ins.jpg" onclick="document.location='https://www.instagram.com/aputaekwondofamily'"/>
+			</td>
+			<td>
+				<input type="text" value="ENTER EMAIL HERE" name="search"></input>
+				<button onclick="myFunction()" type="submit">SEND</button>
+			</td>
+		</tr>
+	</table>
+	<p style="text-align:center;font-weight:bold">Copyright © 2021 APU Taekwondo Club  [DUO30(W)]. All rights reserved</p>
+</div>
+
+<script type="text/javascript">
+function myFunction() {
+  var txt;
+  if (confirm("Confirm to Subscribe Our Newsletter?")) {
+    txt = "You pressed OK!";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("subscribe").innerHTML = txt;
+}
+</script>
+</body>
+
+</html>

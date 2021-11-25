@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Farewell Party</title>
+<link rel="icon" type="image/x-icon" href="logo.png"/>
+<link href="nav.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.content{
+	float: left;
+	width: 100%;
+	padding: 0 10px;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+	background-color: #FFFFFF;
+}
+
+body{
+	font-size: small;
+}
+
+body {
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  padding: 0 4px;
+}
+
+/* Create x equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}</style>
+</head>
+
+<body>
+<!--navagation bar !-->
+<header>
+	<nav>
+		<div id="nav-logo">
+			<div>
+				<img alt="logo" src="assets/images/logo-white.png" width="45" />
+			</div>
+			<div>
+				TAEKWONDO <span>CLUB</span></div>
+		</div>
+		<ul>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Etiquette</a></li>
+			<li><a href="#">Gallery</a></li>
+			<li><a href="#">Shop</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+	</nav>
+</header>
+	<div class="row"> 
+	  <div class="column">
+	    <img src="EventPhoto/farewell party/farewell (1).jpg" style="width:100%" alt=""/>
+	   	<img src="EventPhoto/farewell party/farewell (2).jpg" style="width:100%" alt=""/>
+	    <img src="EventPhoto/farewell party/farewell (3).jpg" style="width:100%" alt=""/>
+	    <img src="EventPhoto/farewell party/farewell (4).jpg" style="width:100%" alt=""/>
+	    <img src="EventPhoto/farewell party/farewell (5).jpg" style="width:100%" alt=""/>
+	    <img src="EventPhoto/farewell party/farewell (6).jpg" style="width:100%" alt=""/>
+	    <img src="EventPhoto/farewell party/farewell (7).jpg" style="width:100%" alt=""/>
+	    <img src="EventPhoto/farewell party/farewell (8).jpg" style="width:100%" alt=""/>
+	    <img src="EventPhoto/farewell party/farewell (9).jpg" style="width:100%" alt=""/>
+	    <img src="EventPhoto/farewell party/farewell (10).jpg" style="width:100%" alt=""/>
+	  </div>
+	  <div class="column">
+	  	<img src="EventPhoto/farewell party/farewell (11).jpg" style="width:100%" alt=""/>
+	   	<img src="EventPhoto/farewell party/farewell (12).jpg" style="width:100%" alt=""/>
+	    <img src="EventPhoto/farewell party/farewell (13).jpg" style="width:100%" alt=""/>
+	    <img src="EventPhoto/farewell party/farewell (14).jpg" style="width:100%" alt=""/>
+	    <img src="EventPhoto/farewell party/farewell (15).jpg" style="width:100%" alt=""/>
+	    <img src="EventPhoto/farewell party/farewell (16).jpg" style="width:100%" alt=""/>
+	    <img src="EventPhoto/farewell party/farewell (17).jpg" style="width:100%" alt=""/>
+	    <img src="EventPhoto/farewell party/farewell (18).jpg" style="width:100%" alt=""/>
+	    <img src="EventPhoto/farewell party/farewell (19).jpg" style="width:100%" alt=""/>
+	    <img src="EventPhoto/farewell party/farewell (20).jpg" style="width:100%" alt=""/>
+	  </div>  
+	</div>
+
+<div class="footer">
+  	<table style="font: normal normal bold large 'Times New Roman', Times, serif; width: 90%; height:50%;margin-left:80px">
+		<tr>
+			<td style="width: 100px; height: 50px" rowspan="2">
+  			<img alt="logo" src="logo.png" id="logo" align="right"/></td>
+			<td style="width: 220px; height: 50px" rowspan="2">TAEWONDO CLUB</td>
+			<td>FIND US ON</td>
+			<td>SUBSCRIBE TO OUR NEWSLETTER &#x2709;</td>
+		</tr>
+		<tr>
+			<td>
+				<img alt="facebook" id="logo" src="fb.png" onclick="document.location='https://www.facebook.com/APUTaekwondoClub/'"/>
+				<img alt="instragram" id="logo" src="ins.jpg" onclick="document.location='https://www.instagram.com/aputaekwondofamily'"/>
+			</td>
+			<td>
+				<input type="text" value="ENTER EMAIL HERE" name="search"></input>
+				<button onclick="myFunction()" type="submit">SEND</button>
+			</td>
+		</tr>
+	</table>
+	<p style="text-align:center;font-weight:bold">Copyright © 2021 APU Taekwondo Club  [DUO30(W)]. All rights reserved</p>
+</div>
+
+<script type="text/javascript">
+function myFunction() {
+  var txt;
+  if (confirm("Confirm to Subscribe Our Newsletter?")) {
+    txt = "You pressed OK!";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("subscribe").innerHTML = txt;
+}
+</script>
+</body>
+
+</html>
