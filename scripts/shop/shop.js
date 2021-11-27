@@ -8,12 +8,29 @@ class Shops {
       if (shop.name == name) return shop;
     }
   }
+
+  getItem(id) {
+    for (let shop of this.shops) {
+      for (let catalog of shop.catalogs) {
+        for (let item of catalog.items) {
+          if (item.id == id) {
+            return item;
+          }
+        }
+      }
+    }
+  }
 }
 
 class Shop {
   constructor(name, catalogs = []) {
     this.name = name;
     this.catalogs = catalogs;
+    this.shop = null;
+
+    for (let catalog of catalogs) {
+      catalog = this;
+    }
   }
 }
 
@@ -21,45 +38,67 @@ class Catalog {
   constructor(name, items = []) {
     this.name = name;
     this.items = items;
+
+    for (let item of items) {
+      item.catalog = this;
+    }
   }
 }
 
 class Item {
-  constructor(id, name, price, imageSrc) {
+  constructor(id, name, price, imageSrc, description = '', select = null) {
     this.id = id;
     this.name = name;
     this.price = price;
     this.imageSrc = imageSrc;
+    this.description = description;
+    this.select = select;
+    this.catalog = null;
   }
 }
 
-// Merchandise
+class Select {
+  constructor(name, options = []) {
+    this.name = name;
+    this.options = options;
+  }
+}
+
+// Shop Data
 const shops = new Shops([
   new Shop('Merchandise', [
     new Catalog('Clothing', [
       new Item(
         '1001',
-        'Design 1',
+        'White Tee 1',
         50,
-        'assets/images/shop/clothing/tshirt-design-1.jpg'
+        'assets/images/shop/clothing/tshirt-design-1.jpg',
+        'A simple white T-shirt with logo. Made with quality materials.',
+        new Select('Size', ['Large', 'Medium', 'Small'])
       ),
       new Item(
         '1002',
-        'Design 2',
+        'White Tee 2',
         50,
-        'assets/images/shop/clothing/tshirt-design-2.jpg'
+        'assets/images/shop/clothing/tshirt-design-2.jpg',
+        'A white T-shirt with black curvatures. Made with quality materials.',
+        new Select('Size', ['Large', 'Medium', 'Small'])
       ),
       new Item(
         '1003',
-        'Design 3',
+        'Black Tee 1',
         50,
-        'assets/images/shop/clothing/tshirt-design-3.jpg'
+        'assets/images/shop/clothing/tshirt-design-3.jpg',
+        'A simple black T-shirt with logo. Made with quality materials.',
+        new Select('Size', ['Large', 'Medium', 'Small'])
       ),
       new Item(
         '1004',
-        'Design 4',
+        'Black Tee 2',
         50,
-        'assets/images/shop/clothing/tshirt-design-4.jpg'
+        'assets/images/shop/clothing/tshirt-design-4.jpg',
+        'A simple black T-shirt with logo. Made with quality materials.',
+        new Select('Size', ['Large', 'Medium', 'Small'])
       ),
     ]),
     new Catalog('Keychains', [
@@ -67,7 +106,8 @@ const shops = new Shops([
         2001,
         'Keychain 1',
         30,
-        'assets/images/shop/keychain/keychain-design-1.jpg'
+        'assets/images/shop/keychain/keychain-design-1.jpg',
+        'A metal keychain with the logo printed on it.'
       ),
       new Item(
         2002,
@@ -100,10 +140,14 @@ const shops = new Shops([
   new Shop('Gear', []),
 ]);
 
+// Custom element
 class ShopListing extends HTMLElement {
   constructor() {
     super();
+    // Get the type of shop
     this.shopTitle = this.attributes.getNamedItem('shop').value;
+
+    // Add the template
     this.innerHTML = `
       <section id="shop-listing" class="shop-listing">
         <h1 class="title">${this.shopTitle}</h1>
@@ -114,27 +158,24 @@ class ShopListing extends HTMLElement {
     this.createShop(shop);
   }
 
-  createItemElement(name, price, imageSrc) {
-    const itemEl = document.createElement('div');
+  createItemElement(item) {
+    const itemEl = document.createElement('a');
+    itemEl.setAttribute('href', `checkout.html?id=${item.id}`);
     itemEl.classList.add('shop-item');
     itemEl.innerHTML = `
-    <div class="shop-image-container">
-      <img src="${imageSrc}"></img>
-    </div>
-    <div class="content">
-      <h3>${name}</h3>
-      <p class="price">${price}</p>
-    </div>
-  `;
-
+      <div class="shop-image-container">
+        <img src="${item.imageSrc}"></img>
+      </div>
+      <div class="content">
+        <h3>${item.name}</h3>
+        <p class="price">RM ${item.price}</p>
+      </div>
+    `;
     return itemEl;
   }
-  /**
-   *
-   * @param {Catalog} catalog
-   */
+
   createCatalog(catalog) {
-    // Name
+    // Name of catalog
     const heading = document.createElement('h2');
     heading.innerText = catalog.name;
     this.shopListingEl.appendChild(heading);
@@ -146,19 +187,11 @@ class ShopListing extends HTMLElement {
 
     // Add Item
     for (let item of catalog.items) {
-      const itemElement = this.createItemElement(
-        item.name,
-        `RM ${item.price}`,
-        item.imageSrc
-      );
+      const itemElement = this.createItemElement(item);
       shopGrid.appendChild(itemElement);
     }
   }
 
-  /**
-   *
-   * @param {Shop} shop
-   */
   createShop(shop) {
     for (let catalog of shop.catalogs) {
       this.createCatalog(catalog);
