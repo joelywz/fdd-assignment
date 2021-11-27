@@ -123,12 +123,14 @@ based on: https://stackoverflow.com/questions/6080413/input-doesnt-inherit-the-f
     </style>
 
     <link href="styles/justinexternal.css" rel="stylesheet" type="text/css" />
+    <link href="styles/global.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body
     onload="txtNmDefLook(document.getElementById('nm')); txtEmDefLook(document.getElementById('em')); 
 txtStudIDDefLook(document.getElementById('sid')); txtIntCdDefLook(document.getElementById('intCd'))"
   >
+    <header-template></header-template>
     <table class="table" style="background-color: #f7f7f7">
       <tr>
         <td><img alt="" src="assets/images/corners/DesCor(UL).png" /></td>
@@ -306,5 +308,6 @@ txtStudIDDefLook(document.getElementById('sid')); txtIntCdDefLook(document.getEl
       </table>
     </form>
     <br /><br />
+    <script src="scripts/header.js"></script>
   </body>
 </html>

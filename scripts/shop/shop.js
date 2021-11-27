@@ -174,7 +174,7 @@ const shops = new Shops([
         'Groin Guard',
         50,
         'assets/images/shop/protective/groin-guard.jpg',
-        'Protective froin guard for sparring.'
+        'Protective groin guard for sparring.'
       ),
     ]),
     new Catalog('Training', [

@@ -38,6 +38,32 @@ nav {
   justify-content: space-between;
 }
 
+.dropdown:hover .dropdown-nav {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, 0);
+  transition: all 0.2s;
+}
+
+.dropdown-nav {
+  visibility: hidden;
+  position: absolute;
+  width: 200px;
+  opacity: 0;
+  background-color: black;
+  padding: 20px;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+  left: 50%;
+  top: 25px;
+  transform: translate(-50%, 10%);
+  transition: all 0.2s;
+  z-index: 10;
+}
+
 #nav-logo {
   display: flex;
   flex-direction: row;
@@ -49,16 +75,36 @@ nav {
   font-weight: bold;
 }
 
+#nav-logo img {
+  width: 45px;
+  height: 45px;
+}
+
 nav ul {
   display: flex;
+  align-items: center;
   gap: 50px;
   font-weight: 300;
   list-style: none;
+  height: 100%;
+}
+
+nav li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  height: 100%;
 }
 
 nav a {
+  vertical-align: middle;
   color: white;
   text-decoration: none;
+}
+
+nav a:hover {
+  color: rgb(228, 228, 228);
 }
 
 nav .selected {
