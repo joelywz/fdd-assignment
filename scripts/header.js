@@ -4,12 +4,12 @@ class Header extends HTMLElement {
     this.innerHTML = `
       <header>
         <nav>
-          <div id="nav-logo">
+          <a href="homepage.html" id="nav-logo">
             <div>
               <img src="assets/images/logo-white.png" alt="logo" width="45" />
             </div>
             <div>TAEKWONDO <span>CLUB</span></div>
-          </div>
+          </a>
           <ul>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Etiquette</a></li>

@@ -5,6 +5,7 @@
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>Christmas Party 2019</title>
 <link rel="icon" type="image/x-icon" href="assets/images/logo-white.png"/>
+<link href="styles/global.css" rel="stylesheet" type="text/css" />
 <link href="styles/nav.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
 .content{
@@ -18,17 +19,10 @@
 	background-color: #FFFFFF;
 }
 
-body{
-	font-size: small;
-}
-
-body {
-  margin: 0;
-}
-
 .row {
   display: flex;
   padding: 0 4px;
+	justify-content: space-around;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -63,25 +57,8 @@ body {
 </head>
 
 <body>
-<!--navagation bar !-->
-<header>
-	<nav>
-		<div id="nav-logo">
-			<div>
-				<img alt="logo" src="assets/images/logo-white.png" width="45" />
-			</div>
-			<div>
-				TAEKWONDO <span>CLUB</span></div>
-		</div>
-		<ul>
-			<li><a href="#">About Us</a></li>
-			<li><a href="#">Etiquette</a></li>
-			<li><a href="#">Gallery</a></li>
-			<li><a href="#">Shop</a></li>
-			<li><a href="#">Contact Us</a></li>
-		</ul>
-	</nav>
-</header>
+	<header-template></header-template>
+	<main>
 	<div class="row"> 
 	  <div class="column">
 	    <img src="assets/images/EventPhoto/Christmas Party 2019/ChristmasParty2019 (1).jpg" style="width:100%" alt=""/>
@@ -121,6 +98,7 @@ body {
 	  </div>
 	</div>
 
+</main>
 <div class="footer">
   	<table style="font: normal normal bold large 'Times New Roman', Times, serif; width: 90%; height:50%;margin-left:80px">
 		<tr>
@@ -144,6 +122,8 @@ body {
 	<p style="text-align:center;font-weight:bold">Copyright © 2021 APU Taekwondo Club  [DUO30(W)]. All rights reserved</p>
 </div>
 
+
+<script src="scripts/header.js"></script>
 <script type="text/javascript">
 function myFunction() {
   var txt;
