@@ -14,7 +14,7 @@ class Header extends HTMLElement {
             <li><a href="#">About Us</a></li>
             <li><a href="#">Etiquette</a></li>
             <li><a href="#">Gallery</a></li>
-            <li><a href="#">Shop</a></li>
+            <li><a href="merchandise.html">Shop</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
         </nav>

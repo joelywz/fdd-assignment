@@ -137,7 +137,97 @@ const shops = new Shops([
       ),
     ]),
   ]),
-  new Shop('Gear', []),
+  new Shop('Gear', [
+    new Catalog('Protective', [
+      new Item(
+        '4001',
+        'Sparring Gloves',
+        50,
+        'assets/images/shop/protective/gloves-1.jpg',
+        'Gloves for sparring',
+        new Select('Color', ['Black', 'Blue', 'Red'])
+      ),
+      new Item(
+        '4002',
+        'Head Guard',
+        80,
+        'assets/images/shop/protective/head-guard.jpg',
+        'Protective head guard for sparring.',
+        new Select('Color', ['Black', 'Blue', 'Red'])
+      ),
+      new Item(
+        '4003',
+        'Chest Guard',
+        80,
+        'assets/images/shop/protective/chest-guard.jpg',
+        'Protective chest guard for sparring.'
+      ),
+      new Item(
+        '4004',
+        'Shin Guard',
+        40,
+        'assets/images/shop/protective/shin-guard.jpg',
+        'Protective shin guard for sparring.'
+      ),
+      new Item(
+        '4005',
+        'Groin Guard',
+        50,
+        'assets/images/shop/protective/groin-guard.jpg',
+        'Protective froin guard for sparring.'
+      ),
+    ]),
+    new Catalog('Training', [
+      new Item(
+        '5001',
+        'Punch Mitts',
+        80,
+        'assets/images/shop/training/punch-mitts.jpg',
+        'Punch mitts perfect for training'
+      ),
+      new Item(
+        '5001',
+        'Kick Pad',
+        80,
+        'assets/images/shop/training/kick-pad.jpg',
+        'Kick pads perfect for training'
+      ),
+    ]),
+  ]),
+  new Shop('Uniform', [
+    new Catalog('Dobok', [
+      new Item(
+        '6001',
+        'Adult Dobok',
+        100,
+        'assets/images/shop/dobok/dobok-1.jpg',
+        '',
+        new Select('Size', [
+          '4 (170cm)',
+          '5 (180cm)',
+          '6 (190cm)',
+          '7 (200cm)',
+          '8 (210cm)',
+        ])
+      ),
+      new Item(
+        '6002',
+        'Kids/Teen Dobok',
+        50,
+        'assets/images/shop/dobok/dobok-1.jpg',
+        '',
+        new Select('Size', [
+          '0000 (100cm)',
+          '000 (110cm)',
+          '00 (120cm)',
+          '0  (130cm)',
+          '1 (140cm)',
+          '2 (150cm)',
+          '3 (160cm)',
+        ])
+      ),
+    ]),
+  ]),
 ]);
 
 // Custom element
