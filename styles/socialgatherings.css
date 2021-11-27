@@ -41,11 +41,11 @@ img {
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
-  background-image:  url('monthly_next.png');
+  background-image: url('assets/socialgathering/assets/socialgathering/montly_next.png');
   background-repeat: no-repeat;
 }
 
-.prev{
+.prev {
   cursor: pointer;
   position: absolute;
   top: 40%;
@@ -58,7 +58,7 @@ img {
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
-  background-image:  url('monthly_past.png');
+  background-image: url('assets/socialgathering/montly_past.png');
   background-repeat: no-repeat;
 }
 /* Position the "next button" to the right */
@@ -70,16 +70,16 @@ img {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-	background-color: red;
+  background-color: red;
 }
 
 /* Number text */
 .numbertext {
-	color: #0066CC;
-	font-size: 20px;
-	padding: 8px 12px;
-	position: absolute;
-	top: 50px;
+  color: #0066cc;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 50px;
 }
 
 /* Container for image text */
@@ -91,7 +91,7 @@ img {
 }
 
 .row:after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
