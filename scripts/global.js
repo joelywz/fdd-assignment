@@ -10,14 +10,22 @@ class Header extends HTMLElement {
             </div>
             <div>TAEKWONDO <span>CLUB</span></div>
           </a>
-          <ul>
-            <li><a href="etiquette.html">Etiquette</a></li>
+          <ul>            
+            <li class="dropdown">Club Info
+              <div class="dropdown-nav">
+                <a href="etiquette.html">Etiquette</a>
+                <a href="mission.html">Mission</a>
+                <a href="vision.html">Vision</a>
+                <a href="taekwondo.html">What is Taekwondo?</a>
+              </div>
+            </li>
             <li class="dropdown">Gallery
               <div class="dropdown-nav">
                 <a href="christmasparty2019.html">Christmas Party 2019</a>
                 <a href="farewell.html">Farewell Party</a>
                 <a href="friendlymatch.html">Friendly Match</a>
                 <a href="intinilaifriendlymatch.html">Inti Nilai Friendly Match</a>
+                <a href="socialgatherings.html">Social Gathering</a>
                 <a href="videos.html">Videos</a>
               </div>
             </li>
@@ -35,8 +43,8 @@ class Header extends HTMLElement {
             </li>
             <li class="dropdown">Team
               <div class="dropdown-nav">
-                <a href="#">About Us</a>
-                <a href="#">Contact Us</a>
+                <a href="instructor.html">Instructors</a>
+                <a href="contactus.html">Contact Us</a>
                 <a href="joinus.html">Join Us</a>
                 <a href="testimonial.html">Testimonial</a>
               </div>
