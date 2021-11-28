@@ -93,7 +93,7 @@ class Footer extends HTMLElement {
               <a href="https://www.facebook.com/APUTaekwondoClub/">
                 <img src="assets/images/footer/icon-facebook.png" alt=""/>
               </a>
-              <a href="https://www.instagram.com/aputaekwondofamily'">
+              <a href="https://www.instagram.com/aputaekwondofamily">
                 <img src="assets/images/footer/icon-instagram.png" alt=""/>
               </a>
             </div>
