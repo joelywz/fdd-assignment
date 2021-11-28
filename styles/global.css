@@ -171,12 +171,14 @@ footer .location {
 }
 
 footer .input-container {
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
 }
 
 footer input {
   padding: 0 0.5rem;
+  width: 100%;
   outline: none;
   border: none;
   border-radius: 3px 0 0 3px;

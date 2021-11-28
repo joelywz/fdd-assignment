@@ -82,6 +82,7 @@ class Footer extends HTMLElement {
           <div class="copyright-container-right">
             <img src="assets/images/logo-white.png" alt="" width="80" />
             <form id="newsletter-form"action="none" onsubmit="">
+              <label for="newsletter-input">Newsletter</label>
               <div class="input-container">
                 <input id="newsletter-input" type="email" placeholder="Enter your email"></input>
                 <button>
