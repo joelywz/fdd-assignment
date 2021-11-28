@@ -6,7 +6,7 @@ class Header extends HTMLElement {
         <nav>
           <a href="homepage.html" id="nav-logo">
             <div>
-              <img src="assets/images/logo-white.png" alt="logo" width="45" />
+              <img src="assets/images/logo-white.png" alt="" width="45" />
             </div>
             <div>TAEKWONDO <span>CLUB</span></div>
           </a>
@@ -38,6 +38,7 @@ class Header extends HTMLElement {
                 <a href="#">About Us</a>
                 <a href="#">Contact Us</a>
                 <a href="joinus.html">Join Us</a>
+                <a href="testimonial.html">Testimonial</a>
               </div>
             </li>
             <li><a href="faq.html">FAQ</a></li>
@@ -47,5 +48,60 @@ class Header extends HTMLElement {
     `;
   }
 }
+class Footer extends HTMLElement {
+  constructor() {
+    super();
+    this.innerHTML = `
+      <footer>
+        <div class="row">
+          <div class="copyright-container-left">
+            <div class="links">
+              <p>
+                <a href="homepage.html">Home</a> |
+                <a href="contactus.html">Contact Us</a> |
+                <a href="faq.html">FAQ</a>
+              </p>
+            </div>
+            <div>
+              <div class="location">
+                <img src="assets/images/footer/icon-location.png" alt="" />
+                <p>Asia Pacific University of Technology &amp; Innovation (APU)</p>
+              </div>
+               <p>Copyright © 2021 APU Taekwondo Club. All rights reserved.</p>
+            </div>
+          </div>
+          <div class="copyright-container-right">
+            <img src="assets/images/logo-white.png" alt="" width="80" />
+            <form id="newsletter-form"action="none" onsubmit="">
+              <div class="input-container">
+                <input id="newsletter-input" type="email" placeholder="Enter your email"></input>
+                <button>
+                  <img src="assets/images/footer/icon-email.png" alt=""/>
+                </button>
+              </div>
+            </form>
+            <div class="social-links">
+              <a href="https://www.facebook.com/APUTaekwondoClub/">
+                <img src="assets/images/footer/icon-facebook.png" alt=""/>
+              </a>
+              <a href="https://www.instagram.com/aputaekwondofamily'">
+                <img src="assets/images/footer/icon-instagram.png" alt=""/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    `;
+
+    const form = document.getElementById('newsletter-form');
+    const input = document.getElementById('newsletter-input');
+    form.onsubmit = (event) => {
+      event.preventDefault();
+      window.alert('Subscribed to newsletter.');
+      input.value = '';
+    };
+  }
+}
 
 customElements.define('header-template', Header);
+customElements.define('footer-template', Footer);

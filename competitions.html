@@ -1,105 +1,141 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Competitions</title>
+    <link href="assets/images/logo-white.png" rel="icon" type="image/x-icon" />
+    <link href="styles/competitions.css" rel="stylesheet" type="text/css" />
+    <link href="styles/global.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<title>Competitions</title>
-<link href="assets/images/logo-white.png" rel="icon" type="image/x-icon" />
-<link href="styles/nav.css" rel="stylesheet" type="text/css" />
-<link href="styles/competitions.css" rel="stylesheet" type="text/css" />
-<link href="styles/globals.css" rel="stylesheet" type="text/css">
-</head>
+  <body>
+    <header-template></header-template>
 
-<body>
+    <p style="text-align: center; font-size: xx-large; font-weight: bold">
+      Competitions
+    </p>
+    <p
+      style="
+        text-align: center;
+        color: red;
+        border-top: 5px lime dashed;
+        font-size: x-large;
+      "
+    >
+      Inti Nilai Friendly Match
+    </p>
+    <div class="slideshow-container">
+      <div class="mySlides1">
+        <img
+          src="assets/images/EventPhoto/Inti Nilai Friendly Match 2017/Inti Nilai Friendly Match 2017 (14).jpg"
+          style="width: 100%"
+          alt=""
+        />
+      </div>
+      <div class="mySlides1">
+        <img
+          src="assets/images/EventPhoto/Inti Nilai Friendly Match 2017/Inti Nilai Friendly Match 2017 (24).jpg"
+          style="width: 100%"
+          alt=""
+        />
+      </div>
+      <div class="mySlides1">
+        <img
+          src="assets/images/EventPhoto/Inti Nilai Friendly Match 2017/Inti Nilai Friendly Match 2017 (16).jpg"
+          style="width: 100%"
+          alt=""
+        />
+      </div>
+      <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      <button
+        class="button"
+        style="margin: 5px 0px 5px 400px"
+        onclick="document.location='intinilaifriendlymatch.html'"
+      >
+        <span>See More</span>
+      </button>
+    </div>
 
-<header-template></header-template>
+    <p
+      style="
+        text-align: center;
+        color: red;
+        border-top: 5px lime dashed;
+        font-size: x-large;
+      "
+    >
+      Friendly Match
+    </p>
+    <div class="slideshow-container">
+      <div class="mySlides2">
+        <img
+          src="assets/images/EventPhoto/Friendly%20Match/friendlyMatch%20(1).jpg"
+          style="width: 100%"
+          alt=""
+        />
+      </div>
+      <div class="mySlides2">
+        <img
+          src="assets/images/EventPhoto/Friendly%20Match/friendlyMatch%20(12).jpg"
+          style="width: 100%"
+          alt=""
+        />
+      </div>
+      <div class="mySlides2">
+        <img
+          src="assets/images/EventPhoto/Friendly%20Match/friendlyMatch%20(23).jpg"
+          style="width: 100%"
+          alt=""
+        />
+      </div>
+      <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+    </div>
+    <button
+      class="button"
+      style="margin: 5px 0px 5px 650px"
+      onclick="document.location='friendlymatch.html'"
+    >
+      <span>See More</span>
+    </button>
 
+    <footer-template></footer-template>
+    <script src="scripts/global.js"></script>
+    <script type="text/javascript">
+      function myFunction() {
+        var txt;
+        if (confirm('Confirm to Subscribe Our Newsletter?')) {
+          txt = 'You pressed OK!';
+        } else {
+          txt = 'You pressed Cancel!';
+        }
+        document.getElementById('subscribe').innerHTML = txt;
+      }
 
-<p style="text-align: center;font-size:xx-large;font-weight:bold">Competitions</p>
-<p style="text-align: center;color:red;border-top:5px lime dashed;font-size:x-large">Inti Nilai Friendly Match</p>
-<div class="slideshow-container">
-	<div class="mySlides1">
-		<img src="assets/images/EventPhoto/Inti Nilai Friendly Match 2017/Inti Nilai Friendly Match 2017 (14).jpg" style="width:100%" alt=""/>
-	</div>
-	<div class="mySlides1">
-		<img src="assets/images/EventPhoto/Inti Nilai Friendly Match 2017/Inti Nilai Friendly Match 2017 (24).jpg" style="width:100%" alt=""/> </div>
-	<div class="mySlides1">
-		<img src="assets/images/EventPhoto/Inti Nilai Friendly Match 2017/Inti Nilai Friendly Match 2017 (16).jpg" style="width:100%" alt=""/> </div>
-	<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-	<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-	<button class="button" style="margin:5px 0px 5px 400px" onclick="document.location='intinilaifriendlymatch.html'"><span>See More</span></button>
-</div>
+      var slideIndex = [1, 1];
+      var slideId = ['mySlides1', 'mySlides2'];
+      showSlides(1, 0);
+      showSlides(1, 1);
 
+      function plusSlides(n, no) {
+        showSlides((slideIndex[no] += n), no);
+      }
 
-<p style="text-align: center;color:red;border-top:5px lime dashed;font-size:x-large">Friendly Match</p>
-<div class="slideshow-container">
-	<div class="mySlides2">
-		<img src="assets/images/EventPhoto/Friendly%20Match/friendlyMatch%20(1).jpg" style="width:100%" alt=""/> </div>
-	<div class="mySlides2">
-		<img src="assets/images/EventPhoto/Friendly%20Match/friendlyMatch%20(12).jpg" style="width:100%" alt=""/> </div>
-	<div class="mySlides2">
-		<img src="assets/images/EventPhoto/Friendly%20Match/friendlyMatch%20(23).jpg" style="width:100%" alt=""/> </div>
-	<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-	<a class="next" onclick="plusSlides(1, 1)">&#10095;</a> </div>
-	<button class="button" style="margin:5px 0px 5px 650px" onclick="document.location='friendlymatch.html'"><span>See More</span></button>
-
-
-
-<div class="footer">
-	<table style="font: normal normal bold large 'Times New Roman', Times, serif; width: 90%; height: 50%; margin-left: 80px">
-		<tr>
-			<td rowspan="2" style="width: 100px; height: 50px">
-			<img id="logo" align="right" alt="logo" src="assets/images/logo-white.png" /></td>
-			<td rowspan="2" style="width: 220px; height: 50px">TAEWONDO CLUB</td>
-			<td>FIND US ON</td>
-			<td>SUBSCRIBE TO OUR NEWSLETTER &#x2709;</td>
-		</tr>
-		<tr>
-			<td>
-			<img id="logo" alt="facebook" onclick="document.location='https://www.facebook.com/APUTaekwondoClub/'" src="fb.png" />
-			<img id="logo" alt="instragram" onclick="document.location='https://www.instagram.com/aputaekwondofamily'" src="ins.jpg" />
-			</td>
-			<td><input name="search" type="text" value="ENTER EMAIL HERE"></input>
-			<button onclick="myFunction()" type="submit">SEND</button></td>
-		</tr>
-	</table>
-	<p style="text-align: center; font-weight: bold">Copyright © 2021 APU Taekwondo 
-	Club [DUO30(W)]. All rights reserved</p>
-</div>
-
-<script src="scripts/global.js"></script>
-<script type="text/javascript">
-function myFunction() {
-  var txt;
-  if (confirm("Confirm to Subscribe Our Newsletter?")) {
-    txt = "You pressed OK!";
-  } else {
-    txt = "You pressed Cancel!";
-  }
-  document.getElementById("subscribe").innerHTML = txt;
-}
-
-var slideIndex = [1,1];
-var slideId = ["mySlides1", "mySlides2"]
-showSlides(1, 0);
-showSlides(1, 1);
-
-function plusSlides(n, no) {
-  showSlides(slideIndex[no] += n, no);
-}
-
-function showSlides(n, no) {
-  var i;
-  var x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}    
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex[no]-1].style.display = "block";  
-}s
-</script>
-
-</body>
-
+      function showSlides(n, no) {
+        var i;
+        var x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {
+          slideIndex[no] = 1;
+        }
+        if (n < 1) {
+          slideIndex[no] = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = 'none';
+        }
+        x[slideIndex[no] - 1].style.display = 'block';
+      }
+    </script>
+  </body>
 </html>

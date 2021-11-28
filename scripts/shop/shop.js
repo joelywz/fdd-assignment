@@ -186,7 +186,7 @@ const shops = new Shops([
         'Punch mitts perfect for training'
       ),
       new Item(
-        '5001',
+        '5002',
         'Kick Pad',
         80,
         'assets/images/shop/training/kick-pad.jpg',
