@@ -38,6 +38,32 @@ nav {
   justify-content: space-between;
 }
 
+.dropdown:hover .dropdown-nav {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, 0);
+  transition: all 0.2s;
+}
+
+.dropdown-nav {
+  visibility: hidden;
+  position: absolute;
+  width: 200px;
+  opacity: 0;
+  background-color: black;
+  padding: 20px;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+  left: 50%;
+  top: 25px;
+  transform: translate(-50%, 10%);
+  transition: all 0.2s;
+  z-index: 10;
+}
+
 #nav-logo {
   display: flex;
   flex-direction: row;
@@ -49,16 +75,36 @@ nav {
   font-weight: bold;
 }
 
+#nav-logo img {
+  width: 45px;
+  height: 45px;
+}
+
 nav ul {
   display: flex;
+  align-items: center;
   gap: 50px;
   font-weight: 300;
   list-style: none;
+  height: 100%;
+}
+
+nav li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  height: 100%;
 }
 
 nav a {
+  vertical-align: middle;
   color: white;
   text-decoration: none;
+}
+
+nav a:hover {
+  color: rgb(228, 228, 228);
 }
 
 nav .selected {
@@ -69,4 +115,85 @@ main {
   margin: 0 auto;
   max-width: 1440px;
   padding: 50px 50px;
+}
+
+/* footer */
+footer {
+  background-color: black;
+  color: #a3a3a3;
+  padding: 25px 0;
+  font-size: 0.8rem;
+}
+
+footer .row {
+  display: flex;
+  flex-direction: row;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 30px 50px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+footer .copyright-container-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
+  text-align: left;
+}
+
+footer .copyright-container-right {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+footer .links {
+  color: white;
+  /* padding-bottom: 60px; */
+}
+
+footer .location {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+footer .input-container {
+  display: flex;
+  flex-direction: row;
+}
+
+footer input {
+  padding: 0 0.5rem;
+  outline: none;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  height: 30px;
+  background-color: #434343;
+  color: white;
+}
+
+footer .input-container button {
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: #626262;
+  border-radius: 0 3px 3px 0;
+}
+
+footer .input-container button:hover {
+  cursor: pointer;
+}
+
+footer .input-container img {
+  height: 100%;
+  padding: 5px;
+}
+
+footer .social-links a {
+  padding-left: 20px;
 }
