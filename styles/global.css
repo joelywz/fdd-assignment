@@ -1,9 +1,9 @@
 /** @format */
 
 @font-face {
-  font-family: "Inter";
-  src: url("../assets/fonts/Inter-VariableFont_slnt,wght.ttf")
-    format("truetype-variations");
+  font-family: 'Inter';
+  src: url('../assets/fonts/Inter-VariableFont_slnt,wght.ttf')
+    format('truetype-variations');
   font-weight: 1 999;
 }
 
@@ -73,6 +73,8 @@ main {
   max-width: 1440px;
   padding: 50px 50px;
 }
+
+/*Suleiman*/
 .sub-menu {
   display: none;
 }
@@ -116,7 +118,7 @@ main {
 }
 .mission h1 {
   font-size: 3em;
-  font-family: "Inter";
+  font-family: 'Inter';
 }
 .mission p {
   margin-top: 25px;
@@ -134,7 +136,7 @@ main {
 }
 .taek h1 {
   font-size: 3em;
-  font-family: "Inter";
+  font-family: 'Inter';
 }
 .taek p {
   margin-top: 25px;
@@ -320,7 +322,7 @@ main {
   transform: translateY(-20px);
 }
 
-.contactform .input input[type="submit"] {
+.contactform .input input[type='submit'] {
   width: 100px;
   background: dodgerblue;
 }
