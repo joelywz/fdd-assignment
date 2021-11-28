@@ -11,14 +11,13 @@
 }
 .mission h1 {
   font-size: 3em;
-  font-family: "Inter";
+  font-family: 'Inter';
 }
 .mission p {
   margin-top: 25px;
   line-height: 30px;
 }
 .taek {
-  width: 70%;
   height: 45vw;
   display: flex;
   margin: auto;
@@ -29,7 +28,7 @@
 }
 .taek h1 {
   font-size: 3em;
-  font-family: "Inter";
+  font-family: 'Inter';
 }
 .taek p {
   margin-top: 25px;
@@ -215,7 +214,7 @@
   transform: translateY(-20px);
 }
 
-.contactform .input input[type="submit"] {
+.contactform .input input[type='submit'] {
   width: 100px;
   background: dodgerblue;
 }
