@@ -1,23 +1,18 @@
-﻿body {
-  font-family: Arial;
-  margin: 0;
-}
-
-* {
+﻿* {
   box-sizing: border-box;
 }
 
-img {
+main img {
   vertical-align: middle;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
-.container {
+main .container {
   position: relative;
 }
 
 /* Hide the images by default */
-.mySlides {
+main .mySlides {
   display: none;
 }
 
@@ -62,13 +57,13 @@ img {
   background-repeat: no-repeat;
 }
 /* Position the "next button" to the right */
-.next {
+main .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
+main .prev:hover,
 .next:hover {
   background-color: red;
 }
@@ -83,26 +78,26 @@ img {
 }
 
 /* Container for image text */
-.caption-container {
+caption-container {
   text-align: center;
   background-color: #222;
   padding: 2px 16px;
   color: white;
 }
 
-.row:after {
+main .row:after {
   content: '';
   display: table;
   clear: both;
 }
 
-.column {
+main .column {
   float: left;
   width: 10%;
 }
 
 /* Add a transparency effect for thumnbail images */
-.demo {
+main .demo {
   opacity: 0.6;
 }
 
