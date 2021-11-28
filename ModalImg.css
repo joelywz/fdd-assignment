@@ -1,0 +1,467 @@
+﻿#myImg0 {
+  border: solid 4px black;	/* Added border radius */
+  border-radius: 20px;		/* original, border-radius: 5px, modified to 20px */
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg0:hover {opacity: 0.7;}
+
+#myImg1 {
+  border: solid 4px black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg1:hover {opacity: 0.7;}
+
+#myImg2 {
+  border: solid 4px black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg2:hover {opacity: 0.7;}
+
+#myImg3 {
+  border: solid 4px black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg3:hover {opacity: 0.7;}
+
+#myImg4 {
+  border: solid 4px black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg4:hover {opacity: 0.7;}
+
+#myImg5 {
+  border: solid 4px black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg5:hover {opacity: 0.7;}
+
+#myImg6 {
+  border: solid 4px black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg6:hover {opacity: 0.7;}
+
+#myImg7 {
+  border: solid 4px black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg7:hover {opacity: 0.7;}
+
+#myImg8 {
+  border: solid 4px black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg8:hover {opacity: 0.7;}
+
+#myImg9 {
+  border: solid 4px black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg9:hover {opacity: 0.7;}
+
+#myImg10 {
+  border: solid 4px black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg10:hover {opacity: 0.7;}
+
+#myImg11 {
+  border: solid 4px black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg11:hover {opacity: 0.7;}
+
+#myImg12 {
+  border: solid 4px black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg12:hover {opacity: 0.7;}
+
+#myImg13 {
+  border: solid 4px black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg13:hover {opacity: 0.7;}
+
+#myImg14 {
+  border: solid 4px black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg14:hover {opacity: 0.7;}
+
+#myImg15 {
+  border: solid 4px black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg15:hover {opacity: 0.7;}
+
+#myImg16 {
+  border: solid 4px black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg16:hover {opacity: 0.7;}
+
+#myImg17 {
+  border: solid 4px black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg17:hover {opacity: 0.7;}
+
+#myImg18 {
+  border: solid 4px black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg18:hover {opacity: 0.7;}
+
+#myImg19 {
+  border: solid 4px black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg19:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 400px;		/* original, max-width: 700px modified to 400px */
+}
+
+/* Caption of Modal Image */
+#caption0 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#caption1 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#caption2 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#caption3 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#caption4 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#caption5 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#caption6 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#caption7 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#caption8 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#caption9 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#caption10 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#caption11 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#caption12 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#caption13 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#caption14 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#caption15 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#caption16 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#caption17 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#caption18 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+#caption19 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption0, #caption1, #caption2, #caption3, #caption4, #caption5, #caption6, #caption7, #caption8, #caption9, 
+#caption10, #caption11, #caption12, #caption13, #caption14, #caption15, #caption16, #caption17, #caption18, #caption19 {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}

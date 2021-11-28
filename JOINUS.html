@@ -3,110 +3,9 @@
 
 <head>
 <title>Join Us</title>
-<script type="text/javascript">
-var execute = 0;
+<script src="justinFunction.js" type="text/javascript"></script>
+<link href="justinexternal.css" rel="stylesheet" type="text/css" />
 
-	function onFocusHandler(x){
-		var deftext = ["As per Student Card", "e.g., johndoe123@gmail.com", "TPxxxxxx", "e.g., APU1F2103SE"];
-		for (i = 0; i < deftext.length; i++){
-			if (x.value == deftext[i]){
-				x.value="";
-				x.style.color="#000000";
-				x.style.fontStyle="normal";
-				execute += 1;	
-			}
-		}
-}
-	/* 	Have 4 default textBox Input 
-		For each onclick, will remove default text
-		So, if user need to modify his answer again, 
-		when user click, the ans he entered won't go blank*/
-	function execute4(x){
-		if (execute <= 4){
-			onFocusHandler(x)
-		}
-}
-	function submitMsg(){
-		var form, name, email, studID, intakeCd;
-		form = document.getElementById("form1");
-		name = form.elements["nm"].value;
-		email = form.elements["em"].value;
-		studID = form.elements["sid"].value;
-		intakeCd = form.elements["intCd"].value;
-		if (name == "As per Student Card" || name == ""){
-			window.alert("The Full Name field is not filled. Try Again.")
-			return false;
-		}
-		else if (email == "e.g., johndoe123@gmail.com" || email == ""){
-			window.alert("The Email field is not filled. Try Again.")
-			return false;
-		}
-		else if (email.endsWith(".com") == false){
-			window.alert("Invalid Email. Try Again.");
-			return false;
-		}
-		else if (studID == "TPxxxxxx" || studID == ""){
-			window.alert("The Student ID field is not filled. Try Again.")
-			return false;
-		}
-		else if (studID.startsWith("TP") == false || studID.length != 8){
-			window.alert("Invalid Student ID. Try Again.");
-			return false;
-		}
-		else if (intakeCd == "e.g., APU1F2103SE" || intakeCd == ""){
-			window.alert("The Intake Code field is not filled. Try Again.")
-			return false;
-		}
-		window.alert("Thanks " + name + " for signing up with APU Taekwondo Club. Please check your inbox at " + email + " for a notification email.");
-		return true;
-}
-
-/*
-	function txtDefLook(){
-		var name = document.getElementById("nm");   // Get the element with id="demo"
-		name.value="As per Student Card";
-		name.style.color="#CCCCCC";
-		name.style.fontStyle="italic";
-		
-		var email = document.getElementById("em");   // Get the element with id="demo"
-		email.value="e.g., johndoe123@gmail.com";
-		email.style.color="#CCCCCC";
-		email.style.fontStyle="italic";
-		
-		var studID = document.getElementById("sid");   // Get the element with id="demo"
-		studID.value="TPxxxxxx";
-		studID.style.color="#CCCCCC";
-		studID.style.fontStyle="italic";
-		
-		var intakeCd = document.getElementById("intCd");   // Get the element with id="demo"
-		intakeCd.value="e.g., APU1F2103SE";
-		intakeCd.style.color="#CCCCCC";
-		intakeCd.style.fontStyle="italic";
-
-}
-*/
-	function txtNmDefLook(x){
-		x.value="As per Student Card";
-		x.style.color="#CCCCCC";
-		x.style.fontStyle="italic";
-}
-	function txtEmDefLook(x){
-		x.value="e.g., johndoe123@gmail.com";
-		x.style.color="#CCCCCC";
-		x.style.fontStyle="italic";
-}
-	function txtStudIDDefLook(x){
-		x.value="TPxxxxxx";
-		x.style.color="#CCCCCC";
-		x.style.fontStyle="italic";
-}
-	function txtIntCdDefLook(x){
-		x.value="e.g., APU1F2103SE";
-		x.style.color="#CCCCCC";
-		x.style.fontStyle="italic";
-}
-
-</script>
 <!-- Form items don't inherit font information from <body> tag (HTML Selector)
 based on: https://stackoverflow.com/questions/6080413/input-doesnt-inherit-the-font-from-body -->
 <style type="text/css">
@@ -117,8 +16,6 @@ select{
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 </style>
-
-<link href="justinexternal.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body onload="txtNmDefLook(document.getElementById('nm')); txtEmDefLook(document.getElementById('em')); 
@@ -138,8 +35,9 @@ txtStudIDDefLook(document.getElementById('sid')); txtIntCdDefLook(document.getEl
 	<tr>
 		<td><img alt="" src="DesCor(BL).png" /></td>
 		<td><h2 style="font-style: italic">Be Part of the APU Taekwondo Family Today !</h2>
-			<div style="text-decoration: underline; width: 300px" class="blackSection" >
+			<div style="width: 300px; font-size: x-large" class="blackSection" id="jumpx">
 				Sign Up Below
+				<script src="NudgingText1.js" type="text/javascript"></script>
 			</div>
 		</td>
 		<td><img alt="" src="DesCor(BR).png" /></td>
@@ -147,7 +45,7 @@ txtStudIDDefLook(document.getElementById('sid')); txtIntCdDefLook(document.getEl
 </table>
 <br/><br/>
 
-<form onsubmit="return submitMsg()" name="joinusform" id="form1" method="get" action="#">
+<form onsubmit="return submitMsg()" name="joinusform" id="form1" method="get" action="homepage.html">		<!-- BROKEN LINK: Yu Hang's Home Page -->
 	<table cellpadding="10px" style="vertical-align: top; text-align: left; border: solid 4px black" class="table" >
 		<tr>
 			<td>Full Name</td>
@@ -216,8 +114,8 @@ txtStudIDDefLook(document.getElementById('sid')); txtIntCdDefLook(document.getEl
 		<tr>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
-			<td><input type="submit" style="font-size:large; width: 150px" class="blackSection"/>&nbsp;&nbsp;&nbsp;&nbsp;
-				<input type="reset" style="font-size:large; width: 150px" class="blackSection" onclick="window.location.reload()" />
+			<td><input type="submit"  class="blackSection frmButton"/>&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="reset" class="blackSection frmButton" onclick="window.location.reload()" />
 			</td>
 		</tr>
 	</table>
