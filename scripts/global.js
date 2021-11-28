@@ -44,6 +44,7 @@ class Header extends HTMLElement {
             <li class="dropdown">Team
               <div class="dropdown-nav">
                 <a href="instructor.html">Instructors</a>
+                <a href="commitee.html">Commitee</a>
                 <a href="contactus.html">Contact Us</a>
                 <a href="joinus.html">Join Us</a>
                 <a href="testimonial.html">Testimonial</a>
