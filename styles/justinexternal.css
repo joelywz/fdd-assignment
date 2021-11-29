@@ -1,11 +1,6 @@
 ﻿/* Common Use 
 (Used Across Different Page) */ 
 
-/* HTML Selector */
-body{
-	font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-
 /* CLASS Selector */
 .circlePic{				/* Did Avatar Icon (TESTIMONIAL), Oval Pic (JOINUS) Round Pic (FAQ)*/
 	border-radius: 50%;
