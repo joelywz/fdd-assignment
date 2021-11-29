@@ -11,7 +11,7 @@
 }
 .mission h1 {
   font-size: 3em;
-  font-family: 'Inter';
+  font-family: "Inter";
 }
 .mission p {
   margin-top: 25px;
@@ -28,7 +28,7 @@
 }
 .taek h1 {
   font-size: 3em;
-  font-family: 'Inter';
+  font-family: "Inter";
 }
 .taek p {
   margin-top: 25px;
@@ -43,6 +43,7 @@
   justify-content: center;
   margin: auto;
   margin-top: 4%;
+  margin-bottom: 5%;
 }
 .commitee .president {
   /* width: 90%; */
@@ -52,10 +53,13 @@
   margin: auto;
   margin-top: 2%;
 }
+.commitee .president:hover {
+  transform: scale(1.3);
+}
 .commitee .president img {
   width: 180px;
   height: 180px;
-  border-radius: 50%;
+  border-radius: 40%;
 }
 .commitee .president h4 {
   background-color: black;
@@ -63,10 +67,12 @@
   width: 180px;
   padding: 5px;
   text-align: center;
+  margin-top: 2%;
 }
 .commitee .president h5 {
   text-align: center;
   font-size: 1.1em;
+  color: white;
 }
 
 .chairman {
@@ -78,13 +84,42 @@
   margin-top: 2%;
 }
 .instructor {
+  position: relative;
   width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: auto;
   margin-top: 5%;
+  margin-bottom: 5%;
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  padding: 5%;
+  /* border-radius: 30px; */
 }
-.instructor h1 {
-  font-size: 4em;
-  margin-bottom: 4%;
+.instructor .ul,
+.instructor .ur,
+.instructor .bl,
+.instructor .br {
+  position: absolute;
+  z-index: 1;
+}
+.instructor .ul {
+  top: 10px;
+}
+.instructor .ur {
+  top: 10px;
+  right: 0;
+}
+.instructor .bl {
+  bottom: -10px;
+}
+.instructor .br {
+  bottom: 0;
+  right: 0;
+}
+.instructor h2 {
+  font-size: 2.6em;
+  /* margin-bottom: 2%; */
   text-align: center;
 }
 .instructor .container {
@@ -92,7 +127,9 @@
   display: flex;
   flex-direction: row;
   /* flex-shrink: 100px; */
+  margin: auto;
   justify-content: space-between;
+  z-index: 99;
 }
 .instructor .container .inst {
   display: flex;
@@ -214,7 +251,7 @@
   transform: translateY(-20px);
 }
 
-.contactform .input input[type='submit'] {
+.contactform .input input[type="submit"] {
   width: 100px;
   background: dodgerblue;
 }
