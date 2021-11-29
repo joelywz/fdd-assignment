@@ -23,8 +23,7 @@ class Header extends HTMLElement {
               <div class="dropdown-nav">
                 <a href="christmasparty2019.html">Christmas Party 2019</a>
                 <a href="farewell.html">Farewell Party</a>
-                <a href="friendlymatch.html">Friendly Match</a>
-                <a href="intinilaifriendlymatch.html">Inti Nilai Friendly Match</a>
+                <a href="competitions.html">competitions</a>
                 <a href="socialgatherings.html">Social Gathering</a>
                 <a href="picture.html">Pictures</a>
                 <a href="videos.html">Videos</a>
