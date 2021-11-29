@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Rounded Tables</title>
+</head>
+
+<body>
+
+<h1>Rounded Tables</h1>
+
+<b>Example 1: Create Rounded Corners Using Images (a HTML trick)</b><br/>
+
+<ol>
+	<li>Switch to Code or Design View.</li>
+	<li>Create a table of 3 x3. Set border (by default), cellspacing and 
+	cellpadding to ZERO (0).</li>
+	<li>Drag and drop respective image to a data-cell at each corner.</li>
+	<li>Go to Row 1, Col 2, set the width of the data-cell to 100%.</li>
+	<li>Set the table's background same as the image colour.</li>
+	<li>Place content in the centre.</li>
+</ol><br/>
+
+<table border="0" cellpadding="0" cellspacing="0" style="width: 100%; background-color:#B5E51D">
+	<tr>
+		<td><img alt="" src="01-upper-left.png" /></td>
+		<td style="width: 100%">&nbsp;</td>
+		<td><img alt="" src="01-upper-right.png" /></td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa leo, bibendum non erat hendrerit, luctus cursus libero. Cras vel commodo ipsum, non finibus purus. Curabitur et odio vel est pharetra ultricies sed nec mi. Nullam tempor suscipit nisl, sollicitudin eleifend eros placerat at. Quisque vel nisl et diam efficitur vehicula. Sed purus urna, aliquam at lorem a, facilisis maximus erat. Donec nec ligula lacinia diam auctor luctus. Ut a varius augue. Etiam ut sodales odio, a ornare nisi. Nullam vitae commodo nisl, ut vestibulum nunc.
+		</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td><img alt="" src="01-bottom-left.png" /></td>
+		<td>&nbsp;</td>
+		<td><img alt="" src="01-bottom-right.png" /></td>
+	</tr>
+</table><br/><br/>
+
+<table border="0" cellpadding="0" cellspacing="0" style="width: 640px; 
+background-color: #FDCB0A;">
+	<tr>
+		<td><img alt="" height="40" src="02-upper-left.png" width="40" /></td>
+		<td style="width: 100%">&nbsp;</td>
+		<td><img alt="" height="40" src="02-upper-right.png" width="40" /></td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa leo, bibendum non erat hendrerit, luctus cursus libero. Cras vel commodo ipsum, non finibus purus. Curabitur et odio vel est pharetra ultricies sed nec mi. Nullam tempor suscipit nisl, sollicitudin eleifend eros placerat at. Quisque vel nisl et diam efficitur vehicula. Sed purus urna, aliquam at lorem a, facilisis maximus erat. Donec nec ligula lacinia diam auctor luctus. Ut a varius augue. Etiam ut sodales odio, a ornare nisi. Nullam vitae commodo nisl, ut vestibulum nunc.
+		</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td><img alt="" height="40" src="02-bottom-left.png" width="40" /></td>
+		<td>&nbsp;</td>
+		<td><img alt="" height="40" src="02-bottom-right.png" width="40" /></td>
+	</tr>
+</table>
+<br/><br/>
+
+<b>Example 2: Designed Corners </b><br/><br/>
+
+<table border="0" cellpadding="0" cellspacing="0" style="width: 800px; border: solid 2px black">
+	<tr>
+		<td><img alt="" src="03-upper-left.png" /></td>
+		<td style="width: 100%">&nbsp;</td>
+		<td><img alt="" src="03-upper-right.png" /></td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td style="text-align: justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa leo, bibendum non erat hendrerit, luctus cursus libero. Cras vel commodo ipsum, non finibus purus. Curabitur et odio vel est pharetra ultricies sed nec mi. Nullam tempor suscipit nisl, sollicitudin eleifend eros placerat at. Quisque vel nisl et diam efficitur vehicula. Sed purus urna, aliquam at lorem a, facilisis maximus erat. Donec nec ligula lacinia diam auctor luctus. Ut a varius augue. Etiam ut sodales odio, a ornare nisi. Nullam vitae commodo nisl, ut vestibulum nunc.
+		</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td><img alt="" src="03-bottom-left.png" /></td>
+		<td>&nbsp;</td>
+		<td><img alt="" src="03-bottom-right.png" /></td>
+	</tr>
+</table>
+<br/><br/>
+
+<b>Example 3: Rounded Corners Using CSS</b><br/><br/>
+
+<table style="width: 100%; border: solid 1px #B5E51D; border-radius: 50px; padding: 50px; 
+background-color: #B5E51D; text-align: justify;">
+	<tr>
+		<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa leo, bibendum non erat hendrerit, luctus cursus libero. Cras vel commodo ipsum, non finibus purus. Curabitur et odio vel est pharetra ultricies sed nec mi. Nullam tempor suscipit nisl, sollicitudin eleifend eros placerat at. Quisque vel nisl et diam efficitur vehicula. Sed purus urna, aliquam at lorem a, facilisis maximus erat. Donec nec ligula lacinia diam auctor luctus. Ut a varius augue. Etiam ut sodales odio, a ornare nisi. Nullam vitae commodo nisl, ut vestibulum nunc.
+		</td>
+	</tr>
+</table>
+<br/><br/>
+
+<table style="width: 640px; border: solid 1px #FFC90D; border-radius: 40px; padding: 40px;	
+background-color: #FFC90D; text-align: justify;">						<!-- border-radius value is get from picture's pixel value -->
+	<tr>
+		<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa leo, bibendum non erat hendrerit, luctus cursus libero. Cras vel commodo ipsum, non finibus purus. Curabitur et odio vel est pharetra ultricies sed nec mi. Nullam tempor suscipit nisl, sollicitudin eleifend eros placerat at. Quisque vel nisl et diam efficitur vehicula. Sed purus urna, aliquam at lorem a, facilisis maximus erat. Donec nec ligula lacinia diam auctor luctus. Ut a varius augue. Etiam ut sodales odio, a ornare nisi. Nullam vitae commodo nisl, ut vestibulum nunc.
+		</td>
+	</tr>
+</table>
+<br/><br/>
+
+<b>Example 4: Images with Rounded Corner</b><br/><br/>
+
+<img alt="" src="mario.jpg" />
+<br/><br/>
+<img alt="" src="mario.jpg" style="border-radius: 48px"/>	<!-- px only works on rectangle img -->
+<br/><br/>
+<img alt="" src="mario.jpg" style="border-radius:48px; border: solid 5px black;"/>
+<br/><br/>
+
+<img alt="" src="goku.jpg" />
+<br/><br/>
+<img alt="" src="goku.jpg" style="border-radius: 50%"/>		<!-- % only works for square img-->
+<br/><br/>
+<img alt="" src="goku.jpg" style="border-radius: 50%; border: solid 4px black"/>
+<br/><br/>
+
+<!-- 	putting % in will turn rectangle img to oval shape,
+		putting % in will turn square img to perfect circle shape -->
+
+
+
+
+<br/><br/>
+<a href="default.html">HTML Tutorials</a>
+
+</body>
+
+</html>

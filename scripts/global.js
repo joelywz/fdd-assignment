@@ -26,6 +26,7 @@ class Header extends HTMLElement {
                 <a href="friendlymatch.html">Friendly Match</a>
                 <a href="intinilaifriendlymatch.html">Inti Nilai Friendly Match</a>
                 <a href="socialgatherings.html">Social Gathering</a>
+                <a href="picture.html">Pictures</a>
                 <a href="videos.html">Videos</a>
               </div>
             </li>

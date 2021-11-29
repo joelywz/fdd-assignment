@@ -2,27 +2,36 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    <title>assets/images/etiquette/etiquette</title>
+    <title>Etiquette</title>
 
     <link href="styles/justinexternal.css" rel="stylesheet" type="text/css" />
     <link href="styles/global.css" rel="stylesheet" type="text/css" />
+    <!-- Embedded Style Sheet -->
     <style type="text/css">
-      table {
+      main table {
         background-color: #f7f7f7;
-        padding: 0px; /* external css (padding 10px), need overwrite */
+        padding: 0px; /* External Style Sheet (padding 10px), need overwrite */
         border-collapse: collapse;
       }
-      table img {
+      main img {
         width: 200px;
         height: 200px;
-      } /* smaller pic */
+      } /* Smaller Square Pictures */
+      main div {
+        width: 1200px;
+        margin: auto;
+      }
+      main ol {
+        padding-left: 20px;
+      } /* ol have (padding-left: 40px, by default) */
     </style>
   </head>
 
   <body>
     <header-template></header-template>
     <main>
-      <table border="0" cellpadding="0" class="table">
+      <table cellpadding="0" class="table">
+        <!-- Etiquette Pictures -->
         <tr>
           <td><img alt="" src="assets/images/corners/DesCor(UL).png" /></td>
           <td colspan="2">
@@ -42,8 +51,9 @@
               style="width: 400px; height: 400px"
             />
           </td>
+          <!-- Inline (width, height) > Embedded (width, height) -->
           <td style="text-align: justify">
-            <img alt="" src="assets/images/etiquette/etiq2.png" /><img
+            <img alt="" src="assets/images/etiquette/etiq1.png" /><img
               alt=""
               src="assets/images/etiquette/etiq3.png"
             /><img alt="" src="assets/images/etiquette/etiq4.png" /><img
@@ -57,10 +67,16 @@
           <td><img alt="" src="assets/images/corners/DesCor(BL).png" /></td>
           <td colspan="2">
             <div
-              style="text-decoration: underline; width: 300px"
+              style="width: 300px; font-size: x-large"
               class="blackSection"
+              id="jumpx"
             >
+              <!-- Inline (width) > Embedded (width) -->
               Read Below
+              <script
+                src="scripts/justin/NudgingText2.js"
+                type="text/javascript"
+              ></script>
             </div>
           </td>
           <td><img alt="" src="assets/images/corners/DesCor(BR).png" /></td>
@@ -68,58 +84,136 @@
       </table>
       <br /><br />
 
-      <div class="blackSection" style="width: 1200px">
-        <!-- General Section-->
+      <div class="blackSection">
+        <!-- Introduction Section-->
         <h2>INTRODUCTION</h2>
       </div>
       <br /><br />
 
-      <div
-        style="border: solid 0px black; width: 1200px"
-        class="faqQuesAnsBlock"
-      >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam commodo
-        nisl et egestas iaculis. Integer condimentum nec ipsum at dapibus.
-        Quisque viverra ligula sed dolor tempor porttitor. Morbi vitae blandit.
-        <br /><br /><br /><br />
+      <div style="width: 1150px">
+        Aside from being a combat sport, Taekwondo is a martial arts discipline
+        that facilitates students in strengthening their physical and mental
+        attributes. With the aim of producing a conducive learning atmosphere,
+        all APU Taekwondo Club members are encouraged to demonstrate mutual
+        respect to one another to assist with this cause.
+        <br /><br /><br />
+        The Dojang is the official ground for all Taekwondo training and
+        proceedings. It is considered a sacred space where students can acquire
+        and obtain the authentic methods of Taekwondo. Additionally, it serves
+        as a brief haven from the everyday struggle, demands, and duties of
+        student life. When entering the Dojang, students are expected to evolve
+        into Taekwondo disciples and devote themselves to the training.
+        <br /><br /><br />
+        It is essential to mention here that the below regulations of Taekwondo
+        rules and etiquette are only for the information and reading of club
+        participants; they are not required to be remembered or memorized.
+        However, each APU Taekwondo Club member must adhere to these guidelines
+        and principles when attending training sessions. Failure to comply with
+        these requirements may result in your expulsion from the club.
+        <br /><br /><br />
       </div>
 
-      <div class="blackSection" style="width: 1200px">
-        <!-- General Section-->
+      <div class="blackSection">
+        <!-- Rules Section-->
         <h2>RULES AND REGULATIONS</h2>
       </div>
-      <br /><br />
+      <br />
 
-      <div
-        style="border: solid 0px black; width: 1200px"
-        class="faqQuesAnsBlock"
-      >
+      <div style="width: 1150px">
         <ol>
-          <li>Lorem ipsum dolor sit amet, consectetur</li>
-          <li>Suspendisse at ullamcorper ante. Quisque scelerisque quam.</li>
-          <li>Nulla sagittis consectetur risus et bibendum.</li>
-          <li>...</li>
+          <li>Display respect and civility to all club members.<br /><br /></li>
+          <li>
+            Distractions to training sessions should be kept to a minimum.<br /><br />
+          </li>
+          <li>
+            Exercise self-restraint during training over strength or speed.<br /><br />
+          </li>
+          <li>
+            Always ensure sufficient space between each member when sparring and
+            avoid initiating contact unless advised.<br /><br />
+          </li>
+          <li>
+            Always attempt new manoeuvres under the observation of senior rank
+            members.<br /><br />
+          </li>
+          <li>
+            Personal hygiene is vital to ensure the safety of all participants,
+            such as clipped fingers and toenails.<br /><br />
+          </li>
+          <li>
+            Personal jewellery is not permitted unless the instructor has
+            granted consent.<br /><br />
+          </li>
+          <li>
+            Mobile devices should be turned off and left unattended throughout
+            the training session.<br /><br />
+          </li>
+          <li>
+            Lost of personal belongings will be the responsibility of the
+            member, not the club.<br /><br />
+          </li>
+          <li>
+            Any injury sustained during training should be promptly reported to
+            the Taekwondo instructor.<br /><br />
+          </li>
         </ol>
-        <br /><br />
       </div>
 
-      <div class="blackSection" style="width: 1200px">
-        <!-- General Section-->
+      <div class="blackSection">
+        <!-- Etiquette Section-->
         <h2>ETIQUETTE</h2>
       </div>
-      <br /><br />
+      <br />
 
-      <div
-        style="border: solid 0px black; width: 1200px"
-        class="faqQuesAnsBlock"
-      >
+      <div style="width: 1150px">
         <ol>
-          <li>Lorem ipsum dolor sit amet, consectetur</li>
-          <li>Suspendisse at ullamcorper ante. Quisque scelerisque quam.</li>
-          <li>Nulla sagittis consectetur risus et bibendum.</li>
-          <li>...</li>
+          <li>
+            While entering or exiting the Dojang, always greet the flags and
+            instructors.<br /><br />
+          </li>
+          <li>
+            Senior members should line up in front at the start of a training
+            session, followed by members with mid-level or junior experience.<br /><br />
+          </li>
+          <li>
+            All Taekwondo instructors should be addressed as either "Sir" or
+            "Madam" during training. Likewise, all training attendees should
+            address Dan-level members by their surnames.<br /><br />
+          </li>
+          <li>
+            Kindly select a suitable opportunity to avoid disrupting the
+            training session if a concerning question needs to be mentioned.<br /><br />
+          </li>
+          <li>
+            It is customary to seek permission from the Taekwondo instructor
+            before entering the Dojang if you have arrived late for a training
+            session. In that event, place yourself discreetly to the side, lift
+            your arm, and patiently standby until the instructor notices you.<br /><br />
+          </li>
+          <li>
+            Maintain a clean and clutter-free Dojang environment at all
+            times.<br /><br />
+          </li>
+          <li>
+            Always make a conservative effort to improve yourself and assist
+            other members.<br /><br />
+          </li>
+          <li>
+            Do not abruptly quit training before the conclusion of the training
+            session without first obtaining permission from the Taekwondo
+            instructor.<br /><br />
+          </li>
+          <li>
+            Kindly maintain the cleanliness and tidiness of your "Dobok". At all
+            times, each member should tuck their jacket into the trouser to
+            ensure neatness during the training session.<br /><br />
+          </li>
+          <li>
+            Your Taekwondo belt represents your standing among your peers.
+            Kindly keep it clean and untorn, and handle it with tremendous
+            reverence and care.<br /><br />
+          </li>
         </ol>
-        <br /><br />
       </div>
     </main>
     <footer-template></footer-template>
