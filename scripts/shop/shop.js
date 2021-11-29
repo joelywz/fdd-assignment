@@ -127,7 +127,7 @@ const shops = new Shops([
         '3002',
         'White Bottle',
         30,
-        'assets/images/shop/bottle/bottle-design-1.jpg'
+        'assets/images/shop/bottle/bottle-design-2.jpg'
       ),
       new Item(
         '3003',

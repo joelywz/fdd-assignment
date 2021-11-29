@@ -26,6 +26,7 @@ class Header extends HTMLElement {
                 <a href="friendlymatch.html">Friendly Match</a>
                 <a href="intinilaifriendlymatch.html">Inti Nilai Friendly Match</a>
                 <a href="socialgatherings.html">Social Gathering</a>
+                <a href="picture.html">Pictures</a>
                 <a href="videos.html">Videos</a>
               </div>
             </li>
@@ -82,6 +83,7 @@ class Footer extends HTMLElement {
           <div class="copyright-container-right">
             <img src="assets/images/logo-white.png" alt="" width="80" />
             <form id="newsletter-form"action="none" onsubmit="">
+              <label for="newsletter-input">Newsletter</label>
               <div class="input-container">
                 <input id="newsletter-input" type="email" placeholder="Enter your email"></input>
                 <button>
