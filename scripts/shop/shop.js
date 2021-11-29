@@ -104,16 +104,17 @@ const shops = new Shops([
     new Catalog('Keychains', [
       new Item(
         2001,
-        'Keychain 1',
+        'Metal Keychain',
         30,
         'assets/images/shop/keychain/keychain-design-1.jpg',
-        'A metal keychain with the logo printed on it.'
+        'A metal keychain by the taekowndo club.'
       ),
       new Item(
         2002,
-        'Keychain 2',
+        'Leather Keychain',
         30,
-        'assets/images/shop/keychain/keychain-design-2.jpg'
+        'assets/images/shop/keychain/keychain-design-2.jpg',
+        'A leather keychain by the taekowndo club.'
       ),
     ]),
     new Catalog('Bottles', [
