@@ -12,7 +12,6 @@
   flex-direction: column;
   justify-content: space-evenly;
   gap: 1rem;
-  font-size: 1.1rem;
 }
 
 .sidebar-shop a {
@@ -22,6 +21,15 @@
   border-radius: 10px;
   width: 100%;
   background-color: white;
+  transition: all .2s;
+}
+
+.sidebar-shop a:hover {
+  background-color: rgb(216, 216, 216);
+}
+
+.sidebar-shop .selected:hover {
+  background-color: rgb(53, 53, 53);
 }
 
 .sidebar-shop .selected {
@@ -62,6 +70,11 @@
   overflow: hidden;
   max-width: 350px;
   width: 100%;
+  transition: all .2s;
+}
+
+.shop-item:hover {
+  transform: scale(1.03);
 }
 
 .shop-image-container {
