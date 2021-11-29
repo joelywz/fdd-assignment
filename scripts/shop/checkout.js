@@ -12,6 +12,7 @@ const descEl = document.getElementById('checkout-description');
 const optionsEl = document.getElementById('checkout-options');
 const selectEl = document.getElementById('checkout-select');
 const selectLabelEl = optionsEl.children[0];
+const buyButtonEl = document.getElementById('checkout-btn-buy');
 optionsEl.hidden = true;
 
 // Get Items
@@ -39,3 +40,8 @@ if (item.select != null) {
     selectEl.appendChild(optionEl);
   }
 }
+
+// Set buy button
+buyButtonEl.addEventListener('click', () => {
+  window.alert(`Successfully bought ${itemName}`);
+})
