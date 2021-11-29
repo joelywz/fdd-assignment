@@ -18,6 +18,9 @@ based on: https://stackoverflow.com/questions/6080413/input-doesnt-inherit-the-f
       select {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
+      td {
+		padding: 10px;
+}
     </style>
   </head>
 
@@ -51,9 +54,10 @@ txtStudIDDefLook(document.getElementById('sid')); txtIntCdDefLook(document.getEl
         <tr>
           <td><img alt="" src="assets/images/corners/DesCor(BL).png" /></td>
           <td>
-            <h2 style="font-style: italic">
+            <h2>
               Be Part of the APU Taekwondo Family Today !
             </h2>
+            <br/>
             <div
               style="width: 300px; font-size: x-large"
               class="blackSection"
@@ -78,9 +82,7 @@ txtStudIDDefLook(document.getElementById('sid')); txtIntCdDefLook(document.getEl
         method="get"
         action="homepage.html"
       >
-        <!-- BROKEN LINK: Yu Hang's Home Page -->
         <table
-          cellpadding="10px"
           style="vertical-align: top; text-align: left; border: solid 4px black"
           class="table"
         >
@@ -140,26 +142,17 @@ txtStudIDDefLook(document.getElementById('sid')); txtIntCdDefLook(document.getEl
             <td>Gender</td>
             <td>:</td>
             <td>
-              <input
-                type="radio"
-                name="gender1"
-                value="M"
-                checked="checked"
-              />Male <input type="radio" name="gender1" value="F" />Female
+              <input type="radio" name="gender1"value="M" checked="checked"/> Male&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="radio" name="gender1" value="F" /> Female
             </td>
           </tr>
           <tr>
             <td>Enrolment</td>
             <td>:</td>
             <td>
-              <input
-                type="radio"
-                name="enrol1"
-                value="F"
-                checked="checked"
-              />Foundation <input type="radio" name="enrol1" value="D" />Diploma
-              <input type="radio" name="enrol1" value="B" />Bachelor&apos;s
-              Degree
+              <input type="radio" name="enrol1" value="F" checked="checked"/> Foundation&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="radio" name="enrol1" value="D" /> Diploma&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="radio" name="enrol1" value="B" /> Bachelor&apos;s Degree
             </td>
           </tr>
           <tr>
