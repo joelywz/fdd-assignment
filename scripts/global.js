@@ -21,10 +21,8 @@ class Header extends HTMLElement {
             </li>
             <li class="dropdown">Gallery
               <div class="dropdown-nav">
-                <a href="christmasparty2019.html">Christmas Party 2019</a>
-                <a href="farewell.html">Farewell Party</a>
-                <a href="competitions.html">competitions</a>
-                <a href="socialgatherings.html">Social Gathering</a>
+                <a href="competitions.html">Competitions</a>
+                <a href="socialgathering.html">Social Gathering</a>
                 <a href="picture.html">Pictures</a>
                 <a href="videos.html">Videos</a>
               </div>
