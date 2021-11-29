@@ -1,0 +1,70 @@
+﻿/* HTML Selector */
+body{
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Common Use (Use Across Different Page) */ 
+
+.circlePic{				/* Did Avatar Icon (Testimonial) & Oval Pic (Join Us) */
+	border-radius: 50%;
+	border: solid 4px black;
+}
+
+/* Testimonial */
+
+.pushLeftColIn{			/* Push Left Column Inwards to look like its within the Designed Corner Image*/
+	padding-left:100px;
+}
+.pushRightColIn{		/* Push Right Column Inwards to look like its within the Designed Corner Image*/
+	padding-right:100px;
+}
+
+/* JoinUs */
+
+.textBelowH2{
+	font-weight: bold;
+	font-style: italic;
+}
+/* FAQs */
+
+.faqPicWidth{
+	width: 200px;
+}
+.texBelowH1{	/* text below Heading 1 */
+	font-size: x-large;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.table{
+	width: 1200px;
+	text-align: center;
+	margin: auto;
+	padding: 10px;
+}
+
+.blackSection{
+	border: solid 1px black;
+	border-radius: 40px;
+	margin: auto;
+	color: white;
+	background-color: black;
+	padding: 10px;
+	font-weight: bold;
+}
+.faqQuesAnsBlock{
+	margin: auto;
+	padding-left: 50px;
+}
+.faqQues{
+	text-decoration: underline;
+	font-size: x-large;
+	font-weight: bold;
+}
+.faqAns{
+	padding-left: 25px;
+	padding-right: 50px;	/* 50px left-pushed faqQuesAnsBlock */
+	font-size: large;
+	text-align:justify;
+}
+
