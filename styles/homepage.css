@@ -11,8 +11,13 @@
 				linear-gradient(to right, #e94332, #a91302) padding-box,
 				linear-gradient(to right, #0867a6, #4aa9e8) border-box;
 }
-
-
+img{
+ width:auto;
+}
+.home{
+	width:100%;
+	height:auto;
+}
 .logo {
 	float: left;
 	margin-top: 1px;
