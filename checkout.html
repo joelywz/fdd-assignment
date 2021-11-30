@@ -1,39 +1,39 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    <link rel="stylesheet" href="styles/global.css" type="text/css" />
-    <link rel="stylesheet" href="styles/shop/checkout.css" type="text/css" />
-    <title>Shop | Checkout</title>
-  </head>
-  <body>
-    <header-template></header-template>
-    <main>
-      <section class="checkout-section">
-        <div class="checkout-image-container">
-          <img src="" alt="" id="checkout-image" />
-        </div>
-        <div id="checkout-content">
-          <div>
-            <div id="checkout-category"></div>
-            <h1 id="checkout-title"></h1>
-            <p id="checkout-description">Simple white t-shirt with logo.</p>
-            <div id="checkout-options">
-              <label for="size">Size</label><br />
-              <select id="checkout-select" class="checkout-select"></select>
-            </div>
-          </div>
-          <div>
-            <p id="checkout-price">RM 00.00</p>
-            <button id="checkout-btn-buy">Buy</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <link rel="stylesheet" href="styles/global.css" type="text/css" />
+  <link rel="stylesheet" href="styles/shop/checkout.css" type="text/css" />
+  <title>Shop | Checkout</title>
+</head>
+<body>
+  <header-template></header-template>
+  <main>
+    <section class="checkout-section">
+      <div class="checkout-image-container">
+        <img src="assets/images/shop/clothing/tshirt-design-1.jpg" alt="" id="checkout-image" />
+      </div>
+      <div id="checkout-content">
+        <div>
+          <div id="checkout-category"></div>
+          <h1 id="checkout-title">Item</h1>
+          <p id="checkout-description">Simple white t-shirt with logo.</p>
+          <div id="checkout-options">
+            <label for="checkout-select">Size</label><br />
+            <select id="checkout-select" class="checkout-select"></select>
           </div>
         </div>
-      </section>
-    </main>
+        <div>
+          <p id="checkout-price">RM 00.00</p>
+          <button id="checkout-btn-buy">Buy</button>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <footer-template></footer-template>
-    <script src="scripts/global.js"></script>
-    <script src="scripts/shop/shop.js"></script>
-    <script src="scripts/shop/checkout.js"></script>
-  </body>
+  <footer-template></footer-template>
+  <script src="scripts/global.js"></script>
+  <script src="scripts/shop/shop.js"></script>
+  <script src="scripts/shop/checkout.js"></script>
+</body>
 </html>
